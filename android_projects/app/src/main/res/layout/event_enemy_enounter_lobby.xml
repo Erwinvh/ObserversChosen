@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GUI.fragments.mapEncounters.EnemyEnounterLobbyEvent">
+
+    <Button
+        android:id="@+id/StartEnemyEncounterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Fight!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/EnemyLobbyBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnemyLobbyTimeText"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/EnemyLobbyBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:src="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EnemyLobbyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EnemyLobbyTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/EnemyLobbyTitle"
+        app:layout_constraintStart_toStartOf="@+id/EnemyLobbyTitle"
+        app:layout_constraintTop_toBottomOf="@+id/EnemyLobbyTitle" />
+
+    <Button
+        android:id="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toTopOf="@+id/StartEnemyEncounterButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintEnd_toStartOf="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toEndOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/ChangeFirstCharacterButtonEnemyLobby" />
+
+    <Button
+        android:id="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ChangeSecondCharacterButtonEnemyLobby" />
+
+    <TextView
+        android:id="@+id/FirstCharacterNameTagEnemyLobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeFirstCharacterButtonEnemyLobby" />
+
+    <TextView
+        android:id="@+id/SecondCharacterNameTagEnemyLobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/FirstCharacterNameTagEnemyLobby"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/FirstCharacterNameTagEnemyLobby" />
+
+    <TextView
+        android:id="@+id/ThirdCharacterNameTagEnemyLobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondCharacterNameTagEnemyLobby"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/SecondCharacterNameTagEnemyLobby" />
+
+    <ImageView
+        android:id="@+id/FirstCharacterImageEnemyLobby"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/EnemyLobbyBackground"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeFirstCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/EnemyLobbyBackground"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/SecondCharacterImageEnemyLobby"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/EnemyLobbyBackground"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeSecondCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/EnemyLobbyBackground"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ThirdCharacterImageEnemyLobby"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/EnemyLobbyBackground"
+        app:layout_constraintEnd_toEndOf="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        app:layout_constraintStart_toStartOf="@+id/ChangeThirdCharacterButtonEnemyLobby"
+        app:layout_constraintTop_toTopOf="@+id/EnemyLobbyBackground"
+        tools:src="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

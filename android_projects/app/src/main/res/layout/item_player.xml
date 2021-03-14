@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/PlayerImage"
+        android:layout_width="141dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/HeadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/GauntletsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PlayerImage"
+        app:layout_constraintTop_toTopOf="@+id/PlayerImage"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/BootsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/PlayerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/LeftHandButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/LeftHandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/BootsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/GauntletsButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/GauntletsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/LeftHandButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PlayerImage"
+        app:layout_constraintTop_toBottomOf="@+id/HeadButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/SpecialItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/TorsoButton"
+        app:layout_constraintEnd_toStartOf="@+id/PlayerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PlayerImage"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/TorsoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/RightHandButton"
+        app:layout_constraintEnd_toStartOf="@+id/PlayerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpecialItemButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/RightHandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/TrousersButton"
+        app:layout_constraintEnd_toStartOf="@+id/PlayerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TorsoButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/TrousersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/PlayerImage"
+        app:layout_constraintEnd_toStartOf="@+id/PlayerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RightHandButton"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ProgressBar
+        android:id="@+id/StaminaBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Stamina"
+        app:layout_constraintEnd_toStartOf="@+id/StaminaLimit"
+        app:layout_constraintStart_toEndOf="@+id/Stamina"
+        app:layout_constraintTop_toTopOf="@+id/Stamina" />
+
+    <TextView
+        android:id="@+id/XPLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/LevelTextView"
+        app:layout_constraintEnd_toStartOf="@+id/ToLevelText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/LevelTextView"
+        app:layout_constraintTop_toTopOf="@+id/LevelTextView" />
+
+    <TextView
+        android:id="@+id/ToLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/XPLimit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/XPLimit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/LevelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Level???"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Stamina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Stamina:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Health" />
+
+    <TextView
+        android:id="@+id/StaminaLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Stamina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Stamina" />
+
+    <TextView
+        android:id="@+id/Energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Energy:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/Stamina"
+        app:layout_constraintTop_toBottomOf="@+id/Stamina" />
+
+    <TextView
+        android:id="@+id/EnergyLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/EnergyBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/EnergyBar" />
+
+    <ProgressBar
+        android:id="@+id/EnergyBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/Energy"
+        app:layout_constraintEnd_toEndOf="@+id/StaminaBar"
+        app:layout_constraintStart_toStartOf="@+id/StaminaBar"
+        app:layout_constraintTop_toTopOf="@+id/Energy" />
+
+    <TextView
+        android:id="@+id/OP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="OP:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/Energy"
+        app:layout_constraintTop_toBottomOf="@+id/Energy" />
+
+    <TextView
+        android:id="@+id/Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Health:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/Stamina"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerImage" />
+
+    <TextView
+        android:id="@+id/HealthLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Health" />
+
+    <ProgressBar
+        android:id="@+id/HealthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/Health"
+        app:layout_constraintEnd_toEndOf="@+id/StaminaBar"
+        app:layout_constraintStart_toStartOf="@+id/StaminaBar"
+        app:layout_constraintTop_toTopOf="@+id/Health" />
+
+    <ProgressBar
+        android:id="@+id/OPBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/OP"
+        app:layout_constraintEnd_toEndOf="@+id/EnergyBar"
+        app:layout_constraintStart_toStartOf="@+id/EnergyBar"
+        app:layout_constraintTop_toTopOf="@+id/OP" />
+
+    <TextView
+        android:id="@+id/OPLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/OPBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/OPBar" />
+
+    <TextView
+        android:id="@+id/Race"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Race:"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/OP"
+        app:layout_constraintTop_toBottomOf="@+id/OP" />
+
+    <TextView
+        android:id="@+id/RaceField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Race"
+        app:layout_constraintStart_toEndOf="@+id/Race"
+        app:layout_constraintTop_toTopOf="@+id/Race" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Age:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/RaceField"
+        app:layout_constraintEnd_toStartOf="@+id/AgeField"
+        app:layout_constraintStart_toEndOf="@+id/RaceField"
+        app:layout_constraintTop_toTopOf="@+id/RaceField" />
+
+    <TextView
+        android:id="@+id/AgeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Age" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ToLevelText"
+        app:layout_constraintStart_toStartOf="@+id/LevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/XPLimit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
